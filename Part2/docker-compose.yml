@@ -3,7 +3,7 @@ services:
   flask_app_1:
     build: ./flask1
     ports:
-      - "5010:5000"
+      - "7000:5000"
     volumes:
       - ./flask1:/app
   flask_app_2:

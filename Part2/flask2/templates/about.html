@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+            background-image: url('https://i.pinimg.com/originals/0e/f3/bb/0ef3bb66d9216fffcea9022628f7bb26.gif');
+            background-size: 85%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height: 100vh;
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: center center;
+            }
+            100% {
+                background-position: center center;
+            }
+        }
+
+        h1 {
+            color: #FFFF;
+        }
+
+        .weather-info {
+            margin-top: 20px;
+            color: #FFFF;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Weather in {{ city.name }}</h1>
+
+    <div class="weather-info">
+        <p>Temperature: {{ city.temperature }}°C</p>
+        <p>Condition: {{ city.condition }}</p>
+    </div>
+
+</body>
+
+</html>
