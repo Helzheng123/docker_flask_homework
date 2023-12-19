@@ -19,7 +19,7 @@ CMD ["python", "app.py"]
 
 To **Dockerize** my FLask Application, I did the following steps:
 1. First build the docker image with ```docker build -t <name> .```
-2. Then do ```docker images``` to show the docker images. Make sure your <name> is there.
+2. Then do ```docker images``` to show the docker images. Make sure your ```<name>``` is there.
 3. Then run the command with ```docker run -d -p 5001:5000 <name>```
 4. Type in ```docker ps``` to check your docker container information.
 5. When you are done with your Docker image, you can stop the image from running with ```docker stop <container ID>```
